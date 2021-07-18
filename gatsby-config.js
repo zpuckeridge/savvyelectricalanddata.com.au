@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Touchwood Productions",
+    title: "Savvy Electrical and Data",
+    siteUrl: `https://savvyelectricalanddata.com/`,
   },
   plugins: [
     "@chakra-ui/gatsby-plugin",
