@@ -33,8 +33,8 @@ import {
   FaMoon,
   FaSun,
   FaInstagram,
-  FaTwitter,
-  FaYoutube,
+  FaFacebook,
+  FaEnvelope,
 } from "react-icons/fa";
 
 import { ReactNode } from "react";
@@ -85,45 +85,7 @@ export default function Navigation(props) {
     return scrollY.onChange(() => setY(scrollY.get()));
   }, [scrollY]);
   const cl = useColorModeValue("gray.800", "white");
-  const mobileNav = useDisclosure();
 
-  const MobileNavContent = (
-    <VStack
-      pos="absolute"
-      top={0}
-      left={0}
-      right={0}
-      display={mobileNav.isOpen ? "flex" : "none"}
-      flexDirection="column"
-      p={2}
-      pb={4}
-      m={2}
-      bg={bg}
-      spacing={3}
-      rounded="sm"
-      shadow="sm"
-    >
-      <CloseButton
-        aria-label="Close menu"
-        justifySelf="self-start"
-        onClick={mobileNav.onClose}
-      />
-      <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-        Dashboard
-      </Button>
-      <Button
-        w="full"
-        variant="solid"
-        colorScheme="brand"
-        leftIcon={<AiOutlineInbox />}
-      >
-        Inbox
-      </Button>
-      <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-        Videos
-      </Button>
-    </VStack>
-  );
   return (
     <React.Fragment>
       <chakra.header
@@ -131,12 +93,8 @@ export default function Navigation(props) {
         shadow={y > height ? "sm" : undefined}
         transition="box-shadow 0.2s"
         bg={bg}
-        borderTop="6px solid"
-        borderTopColor="brand.400"
         w="full"
         overflowY="hidden"
-        borderBottomWidth={2}
-        borderBottomColor={useColorModeValue("gray.200", "gray.900")}
       >
         <chakra.div h="4.5rem" mx="auto" maxW="1200px">
           <Flex
@@ -149,20 +107,29 @@ export default function Navigation(props) {
             <Flex align="flex-start">
               <Link href="/">
                 <HStack>
-                  <Heading>Savvy Electrical and Data</Heading>
+                  <StaticImage
+                    quality={100}
+                    src="../../src/images/logo.webp"
+                    alt="Savvy Electrical and Data"
+                    placeholder="blurred"
+                    width={175}
+                  />
                 </HStack>
               </Link>
             </Flex>
             <Flex justify="flex-end" align="center" color="gray.400">
               <Stack direction={"row"} spacing={6}>
-                <SocialButton label={"Twitter"} href={"#"}>
-                  <FaTwitter />
+                <SocialButton
+                  label={"Facebook"}
+                  href={"https://www.facebook.com/savvyelectricalanddata/"}
+                >
+                  <FaFacebook />
                 </SocialButton>
-                <SocialButton label={"YouTube"} href={"#"}>
-                  <FaYoutube />
-                </SocialButton>
-                <SocialButton label={"Instagram"} href={"#"}>
-                  <FaInstagram />
+                <SocialButton
+                  label={"Email"}
+                  href={"mailto:crooksey93@hotmail.com"}
+                >
+                  <FaEnvelope />
                 </SocialButton>
               </Stack>
               <IconButton
@@ -175,18 +142,8 @@ export default function Navigation(props) {
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
               />
-              <IconButton
-                display={{ base: "flex", md: "none" }}
-                aria-label="Open menu"
-                fontSize="20px"
-                color={useColorModeValue("gray.800", "inherit")}
-                variant="ghost"
-                icon={<AiOutlineMenu />}
-                onClick={mobileNav.onOpen}
-              />
             </Flex>
           </Flex>
-          {MobileNavContent}
         </chakra.div>
       </chakra.header>
     </React.Fragment>

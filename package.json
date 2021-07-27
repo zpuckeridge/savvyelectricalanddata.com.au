@@ -1,8 +1,8 @@
 {
-  "name": "touchwood-productions",
+  "name": "savvy-data-and-electrical",
   "version": "1.0.0",
   "private": true,
-  "description": "Touchwood Productions",
+  "description": "Savvy Data and Electrical",
   "keywords": [
     "gatsby"
   ],
@@ -12,7 +12,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy:github": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.1",

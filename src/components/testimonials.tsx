@@ -4,61 +4,46 @@ import {
   Avatar,
   Box,
   chakra,
-  Container,
   Flex,
-  Heading,
-  Icon,
   SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { ImageDynamicShadow } from "../components/shadow";
-
 const testimonials = [
   {
-    name: "Brandon P.",
-    role: "Chief Marketing Officer",
+    name: "Narelle Brown",
     content:
-      "It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!",
-    avatar:
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "Had Jared here today to install some fans and a few other jobs as well. He was quick and efficient and would recommend Jared to everyone. You need a sparky give jared a call. No job is to big or small.",
+    avatar: "https://randomuser.me/api/portraits/women/14.jpg",
   },
   {
-    name: "Krysta B.",
-    role: "Entrepreneur",
+    name: "Ray Crooks",
     content:
-      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
-    avatar:
-      "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "Savvy electrical and data were very prompt and professional. I had a power outage at the farm and they were there within Half an hour. Our incoming cables were shorting out and they were very quick to fix it! I would highly recommend them!",
+    avatar: "../images/ray_crooks.png",
   },
   {
-    name: "Darcy L.",
-    role: "Movie star",
+    name: "Amanda Walters",
     content:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80",
+      "Very happy with the service, price and reliability Jared offers. Happy to recommend and will use his services again!",
+    avatar: "https://randomuser.me/api/portraits/women/45.jpg",
   },
   {
-    name: "Daniel T.",
-    role: "Musician",
+    name: "Karlene Cleeland",
     content:
-      "I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!",
-    avatar:
-      "https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "I had Jared come give me a quote and then install a full security system in my home, he has done a fantastic job and I had a few little teething issues but he quickly had them sorted for me, I recommend @savvy electrical & data. Thank you so much for your hard work Jared!",
+    avatar: "https://randomuser.me/api/portraits/women/33.jpg",
   },
 ];
 
 interface TestimonialCardProps {
   name: string;
-  role: string;
   content: string;
   avatar: string;
-  index: number;
 }
 
 function TestmonialCard(props: TestimonialCardProps) {
-  const { name, role, content, avatar, index } = props;
+  const { name, content, avatar } = props;
   return (
     <Flex
       boxShadow={"lg"}
@@ -104,10 +89,6 @@ function TestmonialCard(props: TestimonialCardProps) {
         </chakra.p>
         <chakra.p fontWeight={"bold"} fontSize={14}>
           {name}
-          <chakra.span fontWeight={"medium"} color={"gray.500"}>
-            {" "}
-            - {role}
-          </chakra.span>
         </chakra.p>
       </Flex>
       <Avatar
@@ -116,7 +97,7 @@ function TestmonialCard(props: TestimonialCardProps) {
         width={"80px"}
         alignSelf={"center"}
         m={{ base: "0 0 35px 0", md: "0 0 0 50px" }}
-      />
+      />{" "}
     </Flex>
   );
 }
@@ -132,22 +113,25 @@ export default function GridBlurredBackdrop() {
       marginBottom="4rem"
     >
       <Box width={{ base: "full", sm: "lg", lg: "xl" }} margin={"auto"}>
-        <Heading
-          fontSize={"3xl"}
-          py={5}
-          fontWeight={"bold"}
-          color={useColorModeValue("gray.700", "gray.50")}
+        <chakra.p
+          mt={2}
+          fontSize={{ base: "3xl", sm: "4xl" }}
+          lineHeight="8"
+          fontWeight="extrabold"
+          letterSpacing="tight"
+          color={useColorModeValue("gray.900")}
         >
           You are in good company!
-        </Heading>
-        <chakra.h2
-          margin={"auto"}
-          width={"70%"}
-          fontWeight={"medium"}
+        </chakra.p>
+        <chakra.p
+          mt={4}
+          maxW="2xl"
+          fontSize="xl"
+          mx={{ lg: "auto" }}
           color={useColorModeValue("gray.500", "gray.400")}
         >
           Check out what our clients have had to say about us!
-        </chakra.h2>
+        </chakra.p>
       </Box>
       <SimpleGrid
         columns={{ base: 1, xl: 2 }}

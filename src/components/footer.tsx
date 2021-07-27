@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { ReactNode } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -60,21 +60,21 @@ export default function SmallWithLogoLeft() {
       >
         <StaticImage
           quality={100}
-          src="../../src/images/touchwood.webp"
-          alt="Touchwood Productions"
+          src="../../src/images/logo.webp"
+          alt="Zacchary Puckeridge"
           placeholder="blurred"
-          width={200}
+          width={175}
         />
         <Text>© 2021 Savvy Electrical and Data | All Rights Reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
+          <SocialButton
+            label={"Facebook"}
+            href={"https://www.facebook.com/savvyelectricalanddata/"}
+          >
+            <FaFacebook />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
+          <SocialButton label={"Email"} href={"mailto:crooksey93@hotmail.com"}>
+            <FaEnvelope />
           </SocialButton>
         </Stack>
       </Container>
