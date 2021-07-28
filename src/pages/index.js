@@ -50,10 +50,18 @@ export default function SplitScreen() {
                   _hover={{
                     bg: "blue.400",
                   }}
+                  label={"Phone"}
+                  href={"tel:0421197325"}
                 >
                   Give us a call!
                 </Button>
-                <Button rounded={"full"}>Or send us an email!</Button>
+                <Button
+                  rounded={"full"}
+                  label={"Email"}
+                  href={"mailto:savvyelectricalanddata@outlook.com.au"}
+                >
+                  Or send us an email!
+                </Button>
               </Stack>
             </Stack>
           </Flex>

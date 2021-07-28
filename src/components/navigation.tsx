@@ -127,7 +127,7 @@ export default function Navigation(props) {
                 </SocialButton>
                 <SocialButton
                   label={"Email"}
-                  href={"mailto:crooksey93@hotmail.com"}
+                  href={"mailto:savvyelectricalanddata@outlook.com.au"}
                 >
                   <FaEnvelope />
                 </SocialButton>
