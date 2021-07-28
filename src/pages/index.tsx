@@ -5,10 +5,15 @@ import {
   Flex,
   Heading,
   Container,
+  chakra,
+  VisuallyHidden,
+  useColorModeValue,
   Center,
   Stack,
   Text,
 } from "@chakra-ui/react";
+
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 import Navigation from "../components/navigation";
 import Testimonials from "../components/testimonials";
@@ -17,6 +22,37 @@ import Action from "../components/action";
 import Standout from "../components/standout";
 import Seo from "../components/seo";
 import Carousel from "../components/carousel";
+
+const SocialButton = ({
+  children,
+  label,
+  href,
+}: {
+  children: ReactNode;
+  label: string;
+  href: string;
+}) => {
+  return (
+    <chakra.button
+      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      rounded={"full"}
+      cursor={"pointer"}
+      as={"a"}
+      padding="10px"
+      href={href}
+      display={"inline-flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      transition={"background 0.3s ease"}
+      _hover={{
+        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+      }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  );
+};
 
 export default function SplitScreen() {
   return (
@@ -43,25 +79,16 @@ export default function SplitScreen() {
                 and much more!
               </Text>
               <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-                <Button
-                  rounded={"full"}
-                  bg={"#007cb0"}
-                  color={"white"}
-                  _hover={{
-                    bg: "blue.400",
-                  }}
-                  label={"Phone"}
-                  href={"tel:0421197325"}
-                >
-                  Give us a call!
-                </Button>
-                <Button
-                  rounded={"full"}
+                <SocialButton label={"Phone"} href={"tel:0421197325"}>
+                  <FaPhone /> <Text marginLeft="10px">Give us a call!</Text>
+                </SocialButton>
+                <SocialButton
                   label={"Email"}
                   href={"mailto:savvyelectricalanddata@outlook.com.au"}
                 >
-                  Or send us an email!
-                </Button>
+                  <FaEnvelope />{" "}
+                  <Text marginLeft="10px">Or send us an email!</Text>
+                </SocialButton>
               </Stack>
             </Stack>
           </Flex>
