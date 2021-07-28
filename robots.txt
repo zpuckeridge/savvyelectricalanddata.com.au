@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://savvyelectricalanddata.com.au/sitemap.xml
+Host: https://savvyelectricalanddata.com.au
