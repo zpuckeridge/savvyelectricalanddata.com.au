@@ -117,7 +117,7 @@ export default function Navigation(props) {
                 </HStack>
               </Link>
             </Flex>
-            <Flex justify="flex-end" align="center" color="gray.400">
+            <Flex justify="flex-end" align="center">
               <Stack direction={"row"} spacing={6}>
                 <SocialButton
                   label={"Facebook"}

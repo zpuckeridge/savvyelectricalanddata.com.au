@@ -8,7 +8,6 @@ import {
   Center,
   Stack,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 
 import Navigation from "../components/navigation";
@@ -16,32 +15,20 @@ import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
 import Action from "../components/action";
 import Standout from "../components/standout";
-
-import { StaticImage } from "gatsby-plugin-image";
+import Seo from "../components/seo";
+import Carousel from "../components/carousel";
 
 export default function SplitScreen() {
   return (
     <>
+      <Seo title="Home" />
       <Navigation />
       <Container maxW={"7xl"}>
         <Stack minH={"50vh"} direction={{ base: "column", md: "row" }}>
           <Flex p={8} flex={1} align={"center"} justify={"center"}>
             <Stack spacing={6} w={"full"} maxW={"lg"}>
               <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-                <Text
-                  as={"span"}
-                  position={"relative"}
-                  _after={{
-                    content: "''",
-                    width: "full",
-                    height: useBreakpointValue({ base: "20%", md: "30%" }),
-                    position: "absolute",
-                    bottom: 1,
-                    left: 0,
-                    bg: "#007cb0",
-                    zIndex: -1,
-                  }}
-                >
+                <Text as={"span"} position={"relative"}>
                   Savvy Electrical
                 </Text>
                 <br />{" "}
@@ -64,23 +51,15 @@ export default function SplitScreen() {
                     bg: "blue.400",
                   }}
                 >
-                  Call us!
+                  Give us a call!
                 </Button>
-                <Button rounded={"full"}>Send an Email!</Button>
+                <Button rounded={"full"}>Or send us an email!</Button>
               </Stack>
             </Stack>
           </Flex>
           <Flex flex={1}>
             <Center>
-              <StaticImage
-                src="../../src/images/kitchen_electric.png"
-                alt="Kitchen Electrical/Construction Job"
-                placeholder="blurred"
-                layout="fixed"
-                height="400"
-                quality={100}
-                style={{ borderRadius: `10px` }}
-              />
+              <Carousel />
             </Center>
           </Flex>
         </Stack>

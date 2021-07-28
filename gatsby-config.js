@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Savvy Electrical and Data",
+    title: `Savvy Electrical and Data`,
+    description: `We strive for complete customer satisfaction! We are here to help you out with renovations, new builds, small domestic jobs, split system airconditioners, security cameras, home automation and much more!`,
     siteUrl: `https://savvyelectricalanddata.com/`,
   },
   plugins: [
@@ -32,6 +33,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://savvyelectricalanddata.com.au",
+        sitemap: "https://savvyelectricalanddata.com.au/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
   ],
 };

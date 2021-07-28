@@ -30,7 +30,9 @@ export default function Action() {
           lineHeight="shorter"
           color={useColorModeValue("gray.900", "gray.100")}
         >
-          <chakra.span display="block">Have a question?</chakra.span>
+          <chakra.span display="block">
+            Let's get your project started!
+          </chakra.span>
           <chakra.span
             display="block"
             color={useColorModeValue("brand.600", "gray.500")}
