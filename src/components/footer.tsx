@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaFacebook, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaEnvelope, FaPhone } from "react-icons/fa";
 import { ReactNode } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -73,8 +73,14 @@ export default function SmallWithLogoLeft() {
           >
             <FaFacebook />
           </SocialButton>
-          <SocialButton label={"Email"} href={"mailto:crooksey93@hotmail.com"}>
+          <SocialButton
+            label={"Email"}
+            href={"mailto:savvyelectricalanddata@outlook.com.au"}
+          >
             <FaEnvelope />
+          </SocialButton>
+          <SocialButton label={"Phone"} href={"tel:0421197325"}>
+            <FaPhone />
           </SocialButton>
         </Stack>
       </Container>

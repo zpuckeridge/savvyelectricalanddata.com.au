@@ -25,17 +25,8 @@ import {
 import { useViewportScroll } from "framer-motion";
 import {} from "react-icons/fa";
 import { StaticImage } from "gatsby-plugin-image";
-import { IoIosArrowDown } from "react-icons/io";
-import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 
-import { BsFillCameraVideoFill } from "react-icons/bs";
-import {
-  FaMoon,
-  FaSun,
-  FaInstagram,
-  FaFacebook,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaMoon, FaSun, FaPhone, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 import { ReactNode } from "react";
 
@@ -130,6 +121,9 @@ export default function Navigation(props) {
                   href={"mailto:savvyelectricalanddata@outlook.com.au"}
                 >
                   <FaEnvelope />
+                </SocialButton>
+                <SocialButton label={"Phone"} href={"tel:0421197325"}>
+                  <FaPhone />
                 </SocialButton>
               </Stack>
               <IconButton
