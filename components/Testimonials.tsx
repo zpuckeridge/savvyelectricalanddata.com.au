@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FiUser } from "react-icons/fi";
 
 export default function Testimonials() {
@@ -23,13 +22,13 @@ export default function Testimonials() {
                 Fantastic work, great attitude
               </h3>
               <p className="my-4">
-                "I had Jared come give me a quote and then install a full
+                I had Jared come give me a quote and then install a full
                 security system in my home. He has done a fantastic job and I
                 had a few little teething issues but he quickly had them sorted
                 for me, I recommend Savvy Electrical and Data.
               </p>
               <p className="my-4">
-                Thank you so much for your hard work Jared!"
+                Thank you so much for your hard work Jared!
               </p>
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
@@ -45,13 +44,13 @@ export default function Testimonials() {
                 Solid foundation for any project
               </h3>
               <p className="my-4">
-                "Had Jared here today to install some fans and perform a few
+                Had Jared here today to install some fans and perform a few
                 other jobs as well. He was quick and efficient and would
                 recommend Jared to everyone.
               </p>
               <p className="my-4">
                 If you need a sparky, give Jared a call. No job is too big or
-                small."
+                small.
               </p>
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
@@ -67,8 +66,8 @@ export default function Testimonials() {
                 Great service, price and reliability
               </h3>
               <p className="my-4">
-                "Very happy with the service, price and reliability Jared
-                offers. Happy to recommend and will use his services again!"
+                Very happy with the service, price and reliability Jared offers.
+                Happy to recommend and will use his services again!
               </p>
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
@@ -84,12 +83,12 @@ export default function Testimonials() {
                 Prompt and professional
               </h3>
               <p className="my-4">
-                "Savvy Electrical and Data were very prompt and professional. I
+                Savvy Electrical and Data were very prompt and professional. I
                 had a power outage at the farm and they were there within Half
                 an hour. Our incoming cables were shorting out and they were
                 very quick to fix it!
               </p>
-              <p className="my-4">I would highly recommend them!"</p>
+              <p className="my-4">I would highly recommend them!</p>
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
               <FiUser className="w-6 h-6" />

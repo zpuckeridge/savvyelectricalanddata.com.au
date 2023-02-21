@@ -57,8 +57,8 @@ export default function PrivacyPolicy() {
         </h2>
         <p className="mb-6 text-base text-[#888888] md:text-lg">
           Sensitive information is defined in the Privacy Act to include
-          information or opinion about such things as an individual's racial or
-          ethnic origin, political opinions, membership of a political
+          information or opinion about such things as an individual{"'"}s racial
+          or ethnic origin, political opinions, membership of a political
           association, religious or philosophical beliefs, membership of a trade
           union or other professional body, criminal record or health
           information. Sensitive information will be used by us only:{" "}

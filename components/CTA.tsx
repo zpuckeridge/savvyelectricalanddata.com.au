@@ -4,7 +4,7 @@ export default function CTA() {
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:flex justify-between sm:py-16 lg:px-6">
         <div className="max-w-screen-sm">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Let's take your project to the next level!
+            Let{"'"}s take your project to the next level!
           </h2>
           <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">
             Ready to experience the exceptional electrical services that Savvy
