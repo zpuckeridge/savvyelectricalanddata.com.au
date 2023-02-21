@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     domains: ["flowbite.s3.amazonaws.com"],
   },
+  basePath: "/savvyelectricalanddata.com.au",
 };
 
 module.exports = nextConfig;
