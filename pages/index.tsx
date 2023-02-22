@@ -13,8 +13,7 @@ export default function Home() {
         <title>Home | Savvy Electrical and Data</title>
         <meta
           name="description"
-          content="Personal Livestream and Clip Hosting for Video Games and related
-          Media."
+          content="We prioritize achieving complete customer satisfaction by offering various services such as renovations, new builds, security cameras, home automation, and more. Our team is readily available to assist you in any project."
         />
       </Head>
       <nav className="sticky top-8 z-[99]">

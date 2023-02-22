@@ -1,9 +1,17 @@
+import Head from "next/head";
 import Link from "next/link";
 import { FiPhone, FiMail, FiMapPin, FiArrowRight } from "react-icons/fi";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Head>
+        <title>Privacy Policy | Savvy Electrical and Data</title>
+        <meta
+          name="description"
+          content="We prioritize achieving complete customer satisfaction by offering various services such as renovations, new builds, security cameras, home automation, and more. Our team is readily available to assist you in any project."
+        />
+      </Head>
       <div className="mx-auto max-w-4xl p-8 py-16">
         <h1 className="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
           Privacy Policy
