@@ -11,8 +11,7 @@ export default function CTA() {
             Electrical and Data has to offer? Contact us today to schedule a
             consultation with one of our experienced technicians and see how we
             can help you with your electrical needs. Let us show you why we are
-            the top choice for quality electrical services in South East
-            Queensland.
+            the top choice for quality electrical services in Brisbane.
           </p>
         </div>
         <div>

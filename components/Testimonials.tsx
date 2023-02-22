@@ -33,8 +33,9 @@ export default function Testimonials() {
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
               <FiUser className="w-6 h-6" />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="font-medium dark:text-white text-left">
                 <div>Karlene Cleeland</div>
+                <p className="text-xs text-gray-500">Brisbane, Australia</p>
               </div>
             </figcaption>
           </figure>
@@ -55,8 +56,9 @@ export default function Testimonials() {
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
               <FiUser className="w-6 h-6" />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="font-medium dark:text-white text-left">
                 <div>Narelle Brown</div>
+                <p className="text-xs text-gray-500">Brisbane, Australia</p>
               </div>
             </figcaption>
           </figure>
@@ -72,8 +74,9 @@ export default function Testimonials() {
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
               <FiUser className="w-6 h-6" />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="font-medium dark:text-white text-left">
                 <div>Amanda Walters</div>
+                <p className="text-xs text-gray-500">Brisbane, Australia</p>
               </div>
             </figcaption>
           </figure>
@@ -92,8 +95,9 @@ export default function Testimonials() {
             </blockquote>
             <figcaption className="flex justify-center items-center space-x-3">
               <FiUser className="w-6 h-6" />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="font-medium dark:text-white text-left">
                 <div>Ray Crooks</div>
+                <p className="text-xs text-gray-500">Brisbane, Australia</p>
               </div>
             </figcaption>
           </figure>

@@ -8,10 +8,11 @@ export default function Hero() {
           Savvy Electrical and Data
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-          We prioritize achieving complete customer satisfaction by offering
-          various services such as renovations, new builds, security cameras,
-          home automation, and more. Our team is readily available to assist you
-          in any project.
+          We are a <span className="font-bold">Brisbane based</span> electrical
+          and data installation service provider prioritize achieving complete
+          customer satisfaction by offering various services such as
+          renovations, new builds, security cameras, home automation, and more.
+          Our team is readily available to assist you in any project.
         </p>
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
