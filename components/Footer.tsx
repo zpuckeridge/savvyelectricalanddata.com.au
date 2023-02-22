@@ -1,12 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaMobile,
-  FaPhoneAlt,
-  FaPhoneSquareAlt,
-} from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (

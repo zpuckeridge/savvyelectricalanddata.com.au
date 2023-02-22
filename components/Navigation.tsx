@@ -1,17 +1,8 @@
-import { useState } from "react";
 import Image from "next/image";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaFacebookSquare,
-  FaPhoneAlt,
-} from "react-icons/fa";
-import { FiFacebook, FiMail } from "react-icons/fi";
 import Link from "next/link";
+import { FaEnvelope, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <div className="mx-auto max-w-6xl px-4">
       <div className="w-full bg-white/5 rounded-2xl mt-4 backdrop-blur-xl backdrop-brightness-125 shadow-2xl">
