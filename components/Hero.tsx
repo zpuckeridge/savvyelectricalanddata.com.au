@@ -27,6 +27,15 @@ export default function Hero() {
             Or send an email!
           </a>
         </div>
+        <div>
+          <p className="text-4xl my-20 text-center mx-auto font-bold">
+            +61 421 197 325
+            <br />
+            <span className="text-sm">
+              savvyelectricalanddata@outlook.com.au
+            </span>
+          </p>
+        </div>
       </div>
     </section>
   );

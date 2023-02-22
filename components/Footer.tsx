@@ -24,17 +24,20 @@ export default function Footer() {
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              title="Facebook Link">
               <FaFacebook />
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              title="Email">
               <FaEnvelope />
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              title="Phone">
               <FaPhoneAlt />
             </a>
           </div>
