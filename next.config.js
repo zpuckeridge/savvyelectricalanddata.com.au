@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-  assetPrefix: isProd ? "/savvyelectricalanddata.com.au/" : "",
   reactStrictMode: true,
   swcMinify: true,
   images: {
