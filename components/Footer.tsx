@@ -18,19 +18,22 @@ export default function Footer() {
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              title="Facebook Link">
+              title="Facebook Link"
+            >
               <FaFacebook />
             </a>
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              title="Email">
+              title="Email"
+            >
               <FaEnvelope />
             </a>
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              title="Phone">
+              title="Phone"
+            >
               <FaPhoneAlt />
             </a>
           </div>

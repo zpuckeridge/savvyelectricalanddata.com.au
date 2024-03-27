@@ -9,8 +9,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"],
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
       },
+
       colors: {
         primary: {
           50: "#eff6ff",
@@ -27,5 +29,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography", "@tailwindcss/aspect-ratio")],
 };

@@ -13,7 +13,8 @@ export default function Navigation() {
                 href="/"
                 aria-label="Home"
                 title="Home"
-                className="inline-flex items-center mr-8">
+                className="inline-flex items-center mr-8"
+              >
                 <Image
                   src="/logo.webp"
                   width={75}
@@ -30,19 +31,22 @@ export default function Navigation() {
                 <a
                   href="https://www.facebook.com/savvyelectricalanddata/"
                   className="text-black hover:text-gray-500 dark:hover:text-black"
-                  title="Facebook Link">
+                  title="Facebook Link"
+                >
                   <FaFacebook className="w-6 h-6" />
                 </a>
                 <a
                   href="mailto:savvyelectricalanddata@outlook.com.au"
                   className="text-black hover:text-gray-500 dark:hover:text-black"
-                  title="Email">
+                  title="Email"
+                >
                   <FaEnvelope className="w-6 h-6" />
                 </a>
                 <a
                   href="tel:0421197325"
                   className="text-black hover:text-gray-500 dark:hover:text-black"
-                  title="Phone">
+                  title="Phone"
+                >
                   <FaPhoneAlt className="w-6 h-6" />
                 </a>
               </div>
